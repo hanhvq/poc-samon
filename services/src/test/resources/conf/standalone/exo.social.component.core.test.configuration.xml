@@ -23,11 +23,6 @@
    xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
 
   <component>
-    <key>org.exoplatform.services.jcr.ext.app.SessionProviderService</key>
-    <type>org.exoplatform.services.jcr.ext.app.ThreadLocalSessionProviderService</type>
-  </component>
-  
-  <component>
     <key>org.exoplatform.social.core.application.RelationshipPublisher</key>
     <type>org.exoplatform.social.core.application.RelationshipPublisher</type>
   </component>
@@ -216,7 +211,7 @@
           <name>providers</name>
             <description>Identity Providers</description>
             <value>org.exoplatform.social.core.identity.provider.SpaceIdentityProvider</value>
-            <value>org.exoplatform.social.core.identity.provider.FakeIdentityProvider</value>
+            <value>org.exoplatform.social.core.identity.IdentityProvider</value>
           </values-param>
         </init-params>
       </component-plugin>
